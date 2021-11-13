@@ -1,5 +1,4 @@
 thymesave.github.io
 ===
 
-GitHub Page for ThymeSave.
-
+Landing page for ThymeSave.
