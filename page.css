@@ -33,7 +33,7 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -41,7 +41,7 @@ body {
     font-family: 'EB Garamond', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: stretch;
     background: #0c7c5c;
     color: white;
     text-align: center;
@@ -65,10 +65,44 @@ h2 {
 }
 
 p {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     font-size: 1.6rem;
 }
 
+main {
+    flex: 1 1 auto;
+}
+
 .logo {
-    margin-bottom: 2em;
+    margin: 2em 0;
+}
+
+.mission-statement {
+    font-style: italic;
+}
+
+.mission-statement > .highlight {
+    font-weight: bold;
+}
+
+.vision-wrapper {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.vision-statement {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.vision-statement > .quotemark {
+    line-height: 1em;
+    font-size: 2em;
+    color: #29A6A6;
 }
